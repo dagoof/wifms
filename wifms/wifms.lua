@@ -4,7 +4,7 @@ local frame, events = CreateFrame('FRAME'), { }
 local WIFMS_WAITING = false
 local _cnst = {
     PLAYER = 'Player',
-    URL = 'wifms.dagoof.net?'
+    URL = 'wifms.dagoof.net/wifms?'
 }
 
 function get_who_names()
