@@ -12,7 +12,9 @@ function get_who_names()
     local others, other = { }, nil
     for i = 1, GetNumWhoResults() do
         other = select(1, GetWhoInfo(i))
-        table.insert(others, select(1, other))
+        if other ~= character then
+            table.insert(others, select(1, other))
+        end
     end
     return others
 end
